@@ -1,533 +1,301 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Fruitkha | Fresh & Organic Fruits</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- remix icons cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- custom css -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <header class="header-background">
+    <header>
         <nav class="navbar navbar-expand-lg bg-color fixed-top">
             <div class="container">
-                <a class="navbar-brand " href="#"><img src="./img/logo.png" alt="" class="logo"></a>
+                <a class="navbar-brand" href="./index.html" aria-label="Fruitkha home">
+                    <img src="./img/logo.png" alt="Fruitkha" class="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-">
-                            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link active text-light" aria-current="page" href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link active text-light" aria-current="page" href="./news.html">News</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link active text-light" aria-current="page" href="./contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link active text-light" aria-current="page" href="./shop.html">Shop</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2"><a class="nav-link text-light active" href="./index.html">Home</a></li>
+                        <li class="nav-item px-2"><a class="nav-link text-light" href="./about.html">About</a></li>
+                        <li class="nav-item px-2"><a class="nav-link text-light" href="./news.html">News</a></li>
+                        <li class="nav-item px-2"><a class="nav-link text-light" href="./contact.html">Contact</a></li>
+                        <li class="nav-item px-2"><a class="nav-link text-light" href="./shop.html">Shop</a></li>
                     </ul>
-                    <div class="nav-icon fs-5 me-5">
-                        <a href="./cart.html"> <i class="ri-shopping-cart-2-line"></i></a>
-                        <a href="#"><i class="ri-search-line"></i></a>
-
+                    <div class="nav-icon fs-5">
+                        <a href="./cart.html" aria-label="Shopping cart"><i class="ri-shopping-cart-2-line"></i></a>
+                        <a href="./shop.html" aria-label="Search products"><i class="ri-search-line"></i></a>
                     </div>
-
                 </div>
             </div>
         </nav>
-        <!-- hero----------------------------- -->
-        <div class="hero">
-            <div class="container ">
-                <div class="hero-ctn">
-                    <div class="hero-content text-center">
-                        <h5 class="orange-color">Fresh & Organic</h5>
-                        <h1>Delicious Seasonal Fruits</h1>
-                    </div>
-                    <div class="buttons text-center">
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-sm-6 col-md-2">
-                                <button type="button" class="btn btn-orange rounded-pill px-4 py-2 w-100 mb-2">Fruit
-                                    Collection</button>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <button type="button" class="btn btn-outline-orange rounded-pill px-4 py-2 w-100 mb-2">
-                                    Contact Us</button>
-                            </div>
-                            <div class="col-md-4"></div>
-                        </div>
 
-
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content text-center">
+                    <h5 class="orange-color">Fresh &amp; Organic</h5>
+                    <h1>Delicious Seasonal Fruits</h1>
+                    <div class="hero-buttons">
+                        <a href="./shop.html" class="btn btn-orange rounded-pill px-4 py-2">Fruit Collection</a>
+                        <a href="./contact.html" class="btn btn-outline-orange rounded-pill px-4 py-2">Contact Us</a>
                     </div>
                 </div>
-
             </div>
-
-        </div>
+        </section>
     </header>
-    <!-- badges-------------------------------- -->
+
+    <!-- Benefits -->
     <section class="badges">
         <div class="container">
-            <div class="row py-5">
+            <div class="row g-4 py-5">
                 <div class="col-md-4">
-                    <div class="flex-badges d-flex mb-3">
-                        <div class="icon fs-1 me-3 text-center"><i class="ri-truck-fill"></i></div>
-                        <div class="content-badge">
-                            <h4>Free Shipping</h4>
-                            <h6 class="text-secondry">When order over $75</h6>
-                        </div>
+                    <div class="flex-badges d-flex align-items-center">
+                        <div class="icon fs-1 me-3"><i class="ri-truck-fill"></i></div>
+                        <div class="content-badge"><h4>Free Shipping</h4><h6>When order over $75</h6></div>
                     </div>
-
                 </div>
                 <div class="col-md-4">
-                    <div class="flex-badges d-flex mb-3">
+                    <div class="flex-badges d-flex align-items-center">
                         <div class="icon fs-1 me-3"><i class="ri-phone-fill"></i></div>
-                        <div class="content-badge">
-                            <h4>24/7 Support</h4>
-                            <h6 class="text-secondry">Get support all day</h6>
-                        </div>
+                        <div class="content-badge"><h4>24/7 Support</h4><h6>Get support all day</h6></div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="flex-badges d-flex ">
+                    <div class="flex-badges d-flex align-items-center">
                         <div class="icon fs-1 me-3"><i class="ri-loop-right-line"></i></div>
-                        <div class="content-badge">
-                            <h4>Refund</h4>
-                            <h6 class="text-secondry">Get refund within 3 days!</h6>
-                        </div>
+                        <div class="content-badge"><h4>Refund</h4><h6>Get refund within 3 days!</h6></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ---------------------------------------products---------------------------------- -->
-    <section>
+
+    <!-- Products -->
+    <section class="section-padding">
         <div class="container">
-            <div class="heading my-5 mx-auto text-center">
+            <div class="heading text-center">
                 <h2><span class="orange-color">Our</span> P<span class="border1">ro</span>ducts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas <br> itaque eveniet
-                    beatae
-                    optio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas<br class="desktop-break"> itaque eveniet beatae optio.</p>
             </div>
-            <div class="row my-5">
+            <div class="row g-4 mt-3">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="./img/products/product-img-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h4 class="card-title ">Strawberry</h4>
-                            <p class="card-text ">Per Kg</p>
-                            <h3 class="card-title ">85$</h3>
-                            <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6 mt-3"> <i
-                                    class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
+                    <div class="card product-card">
+                        <img src="./img/products/product-img-1.jpg" class="card-img-top" alt="Fresh strawberries">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Strawberry</h4><p class="card-text">Per Kg</p><h3 class="card-title">85$</h3>
+                            <a href="./cart.html" class="btn btn-orange rounded-pill px-3 py-2 mt-3"><i class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="./img/products/product-img-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h4 class="card-title ">Berry</h4>
-                            <p class="card-text ">Per Kg</p>
-                            <h3 class="card-title ">70$</h3>
-                            <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6 mt-3"> <i
-                                    class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
+                    <div class="card product-card">
+                        <img src="./img/products/product-img-2.jpg" class="card-img-top" alt="Fresh berries">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Berry</h4><p class="card-text">Per Kg</p><h3 class="card-title">70$</h3>
+                            <a href="./cart.html" class="btn btn-orange rounded-pill px-3 py-2 mt-3"><i class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="./img/products/product-img-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h4 class="card-title ">Lemon</h4>
-                            <p class="card-text ">Per Kg</p>
-                            <h3 class="card-title ">35$</h3>
-                            <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6 mt-3"> <i
-                                    class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
+                    <div class="card product-card">
+                        <img src="./img/products/product-img-3.jpg" class="card-img-top" alt="Fresh lemons">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Lemon</h4><p class="card-text">Per Kg</p><h3 class="card-title">35$</h3>
+                            <a href="./cart.html" class="btn btn-orange rounded-pill px-3 py-2 mt-3"><i class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- deal---------------------------------------- -->
-    <section class="deals py-5">
-        <div class="row my-5">
-            <div class=" col-sm-12 col-md-6 ">
-                <div class="deal-position">
-                    <div class="image-deal">
-                        <img src="./img/a.jpg" alt="">
-                    </div>
-                    <div class="deal-card text-center py-2">
-                        <h4>30%</h4>
-                        <p>off per kg</p>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class=" col-sm-12 col-md-6">
-                <h2 class="heading-content ms-3"> <span class="orange-color">Deal </span>of the month</h2>
-                <h4 class="sub-head  ms-3">Hikan Strwaberry</h4>
-                <p class="deal-para  ms-3">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam
-                    similique!
-                    Beatae, minima
-                    quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</p>
-                <div class="offer-timer  ms-3">
-                    <div class="time text-center py-3">
-                        <h2><span class="orange-color">00</span></h2>
-                        <p>Days</p>
-                    </div>
-                    <div class="time text-center py-3">
-                        <h2><span class="orange-color">00</span></h2>
-                        <p>Days</p>
-                    </div>
-                    <div class="time text-center py-3">
-                        <h2><span class="orange-color">00</span></h2>
-                        <p>Days</p>
-                    </div>
-                    <div class="time text-center pt-3">
-                        <h2><span class="orange-color">00</span></h2>
-                        <p>Days</p>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6 mt-5  ms-3"> <i
-                        class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
             </div>
         </div>
     </section>
-    <!-- customers reviews------------------------------- -->
-    <section>
+
+    <!-- Deal of the month -->
+    <section class="deals section-padding">
         <div class="container">
-            <div class="customer-reviews text-center">
-                <div class="customer-image mx-auto">
-                    <img src="./img/avaters/avatar1.png" alt="">
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class=" col-sm-12 col-md-8">
-                        <h4 class="my-3 ">Saira Hakim</h4>
-                        <h6 class="text-secondary">Local shop owner</h6>
-                        <p class="fs-5 para">
-                            " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae vitae
-                            dict
-                            eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem
-                            accusantium "
-                        </p>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="deal-position">
+                        <div class="image-deal"><img src="./img/a.jpg" alt="Seasonal fruit deal"></div>
+                        <div class="deal-card text-center"><h4>30%</h4><p>off per kg</p></div>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
-
-                <div class="last-icon fs-1 text-secondary">
-                    <i class="ri-double-quotes-r"></i>
+                <div class="col-lg-6">
+                    <h2 class="heading-content"><span class="orange-color">Deal</span> of the month</h2>
+                    <h4 class="sub-head">Hikan Strawberry</h4>
+                    <p class="deal-para">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant.</p>
+                    <div class="offer-timer">
+                        <div class="time"><h2><span class="orange-color">00</span></h2><p>Days</p></div>
+                        <div class="time"><h2><span class="orange-color">00</span></h2><p>Hours</p></div>
+                        <div class="time"><h2><span class="orange-color">00</span></h2><p>Mins</p></div>
+                        <div class="time"><h2><span class="orange-color">00</span></h2><p>Secs</p></div>
+                    </div>
+                    <a href="./shop.html" class="btn btn-orange rounded-pill px-3 py-2 mt-4"><i class="ri-shopping-cart-2-fill"></i> Add to Cart</a>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- about---------------------------------- -->
-    <section>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="about-position ">
-                        <div class="imgs">
-                            <img src="./img/feature-bg.jpg" class="images" alt="">
-                        </div>
-                        <div class="play">
-                            <i class="ri-play-fill"></i>
-                        </div>
-                    </div>
 
+    <!-- Customer review -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="customer-reviews">
+                <div class="customer-image mx-auto"><img src="./img/avaters/avatar1.png" alt="Customer Saira Hakim"></div>
+                <h4 class="my-3">Saira Hakim</h4>
+                <h6 class="text-secondary">Local shop owner</h6>
+                <p class="fs-5 para">“Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae vitae dicta eaque ipsa quae ab illo inventore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.”</p>
+                <div class="last-icon fs-1 text-secondary"><i class="ri-double-quotes-r"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="about-position">
+                        <img src="./img/feature-bg.jpg" class="images" alt="Fresh fruit selection">
+                        <a href="#" class="play" aria-label="Play introduction video"><i class="ri-play-fill"></i></a>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="content py-3 fs-6">
+                <div class="col-md-6">
+                    <div class="content">
                         <p class="text-secondary">Since Year 1999</p>
                         <h2>We are <span class="orange-color">Fruitkha</span></h2>
-                        <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac
-                            vel
-                            nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien
-                            sed,
-                            interdum velit. Nam eu molestie lorem.</p>
-                        <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo
-                            repellat
-                            veritatis minus, et labore minima mollitia qui ducimus.</p>
-                        <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6  ms-3">
-                            Know more</a>
+                        <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+                        <a href="./about.html" class="btn btn-orange rounded-pill px-3 py-2">Know more</a>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
-    <!--================ discount======================================================= -->
+
+    <!-- Discount -->
     <section class="background-image">
-        <div class="container py-5">
-            <div class="discount">
-                <h2>December sale is on! <br>
-                    with <span class="orange-color">big Discount...</span>
-                </h2>
-                <div class="flexing d-flex pt-4 gx-5 text-center">
-                    <div class="sale fs-5">
-                        <h5>Sale!</h5>
-                        <h5>Upto</h5>
-                    </div>
-                    <div class="discount">
-                        <h3><span class="orange-color">50%</span></h3>
-                    </div>
-                    <div class="dis-para fs-5">
-                        <p>off</p>
-                    </div>
-
-                </div>
-                <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6  ms-3">
-                    Shop Now</a>
-            </div>
-
-        </div>
-    </section>
-    <!-- products/projects--------------------------------------- -->
-    <section id="projects" class="section projects-section">
-
         <div class="container">
-
-            <div class="heading my-5">
-
-                <div class="text-center">
-
-                    <h2><span class="orange-color">Our</span> N<span class="border1">e</span>ws</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas <br> itaque eveniet
-                        beatae
-                        optio.</p>
+            <div class="discount">
+                <h2>December sale is on!<br>with <span class="orange-color">big Discount...</span></h2>
+                <div class="flexing d-flex align-items-center gap-3 pt-4">
+                    <div class="sale fs-5"><h5>Sale!</h5><h5>Upto</h5></div>
+                    <div><h3><span class="orange-color">50%</span></h3></div>
+                    <div class="dis-para fs-5"><p>off</p></div>
                 </div>
+                <a href="./shop.html" class="btn btn-orange rounded-pill px-3 py-2">Shop Now</a>
             </div>
+        </div>
+    </section>
 
-
-            <div class="row g-4 my-5">
-
-                <!-- Project 2 -->
-
+    <!-- Latest news -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="heading text-center">
+                <h2><span class="orange-color">Our</span> N<span class="border1">e</span>ws</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas<br class="desktop-break"> itaque eveniet beatae optio.</p>
+            </div>
+            <div class="row g-4 mt-3">
                 <div class="col-md-6 col-lg-4">
-
-                    <div class="project-card">
-
-                        <img src="./img/latest-news/news-bg-1.jpg" alt="E-Commerce Store">
-
-                        <div class="project-content pt-4">
-
+                    <article class="project-card">
+                        <img src="./img/latest-news/news-bg-1.jpg" alt="Seasonal fruit in autumn">
+                        <div class="project-content">
                             <h3>You will vainly look for fruit on it in autumn.</h3>
-
-                            <p class="pt-2">
-                                <span><i class="ri-user-fill"></i> Admin</span>
-                                <span><i class="ri-calendar-fill"></i> 27 september,2019</span>
-                            </p>
-                            <p class="fs-6 ">
-                                Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae
-                                mattis nunc, egestas viverra eros.
-                            </p>
-                            <div class="project-buttons">
-
-                                <a href="#" class="btn">
-                                    read more>
-                                </a>
-
-
-                            </div>
-
+                            <p class="article-meta"><span><i class="ri-user-fill"></i> Admin</span><span><i class="ri-calendar-fill"></i> 27 September, 2019</span></p>
+                            <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                            <a href="./single-news.html" class="read-more">Read more <i class="ri-arrow-right-line"></i></a>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
-
-
-                <!-- Project 3 -->
-
                 <div class="col-md-6 col-lg-4">
-
-                    <div class="project-card">
-
-                        <img src="./img/latest-news/news-bg-2.jpg" alt="Hospital Management">
-
-                        <div class="project-content pt-4">
-
+                    <article class="project-card">
+                        <img src="./img/latest-news/news-bg-2.jpg" alt="Fresh tomatoes">
+                        <div class="project-content">
                             <h3>A man's worth has its season, like tomato.</h3>
-
-                            <p class="pt-2">
-                                <span><i class="ri-user-fill"></i> Admin</span>
-                                <span><i class="ri-calendar-fill"></i> 27 september,2019</span>
-                            </p>
-                            <p class="fs-6 ">
-                                Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae
-                                mattis nunc, egestas viverra eros.
-                            </p>
-
-                            <div class="project-buttons">
-
-                                <a href="#" class="btn">
-                                    read more>
-                                </a>
-
-                            </div>
-
+                            <p class="article-meta"><span><i class="ri-user-fill"></i> Admin</span><span><i class="ri-calendar-fill"></i> 27 September, 2019</span></p>
+                            <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                            <a href="./single-news.html" class="read-more">Read more <i class="ri-arrow-right-line"></i></a>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
-
-
-                <!-- Project 4 -->
-
                 <div class="col-md-6 col-lg-4">
-
-                    <div class="project-card">
-
-                        <img src="./img/latest-news/news-bg-3.jpg" alt="Portfolio Website">
-
-                        <div class="project-content pt-4">
-
+                    <article class="project-card">
+                        <img src="./img/latest-news/news-bg-3.jpg" alt="Fresh seasonal fruit">
+                        <div class="project-content">
                             <h3>Good thoughts bear good fresh juicy fruit.</h3>
-
-                            <p class="pt-2">
-                                <span><i class="ri-user-fill"></i> Admin</span>
-                                <span><i class="ri-calendar-fill"></i> 27 september,2019</span>
-                            </p>
-                            <p class="fs-6 ">
-                                Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae
-                                mattis nunc, egestas viverra eros.
-                            </p>
-                            <div class="project-buttons">
-
-                                <a href="#" class="btn">
-                                    read more>
-                                </a>
-                            </div>
-
+                            <p class="article-meta"><span><i class="ri-user-fill"></i> Admin</span><span><i class="ri-calendar-fill"></i> 27 September, 2019</span></p>
+                            <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                            <a href="./single-news.html" class="read-more">Read more <i class="ri-arrow-right-line"></i></a>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
-
             </div>
-
+            <div class="text-center mt-5"><a href="./news.html" class="btn btn-orange rounded-pill px-4 py-2">More News</a></div>
         </div>
-        <div class="more text-center my-5">
-            <a href="#" class="btn btn-orange rounded-pill px-3 py-2 fs-6 mt-5"> More News
-            </a>
-        </div>
-
-
     </section>
-    <!------------------------------- badges-------------------------------- -->
+
+    <!-- Partner logos -->
     <section class="bg-grey">
-        <div class="container ">
-            <div class="row text-center">
-                <div class=" col-sm-12 col-md-3 pb-2">
-                    <img src="./img/company-logos/1.png" alt="">
-                </div>
-                <div class=" col-sm-12 col-md-3 pb-2">
-                    <img src="./img/company-logos/2.png" alt="">
-
-                </div>
-                <div class="col-sm-12 col-md-3 pb-2">
-                    <img src="./img/company-logos/3.png" alt="">
-
-                </div>
-                <div class="col-sm-12 col-md-3 pb-2">
-                    <img src="./img/company-logos/4.png" alt="">
-
-                </div>
+        <div class="container">
+            <div class="row align-items-center text-center g-4">
+                <div class="col-6 col-md-3"><img src="./img/company-logos/1.png" alt="Partner logo"></div>
+                <div class="col-6 col-md-3"><img src="./img/company-logos/2.png" alt="Partner logo"></div>
+                <div class="col-6 col-md-3"><img src="./img/company-logos/3.png" alt="Partner logo"></div>
+                <div class="col-6 col-md-3"><img src="./img/company-logos/4.png" alt="Partner logo"></div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3 class="pb-3">About us</h3>
-                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque </p>
-                    <p>laudantium, totam rem aperiam, eaque ipsa quae.</p>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <h3>About us</h3>
+                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
                 </div>
-                <div class="col-md-3">
-                    <h3 class="pb-3">Get in Touch</h3>
-                    <p>34/8, East Hukupara, Gifirtok, Sadan.</p>
-                    <p>support@fruitkha.com</p>
-                    <p>+00 111 222 3333</p>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Get in Touch</h3>
+                    <p>34/8, East Hukupara, Gifirtok, Sadan.</p><p>support@fruitkha.com</p><p>+00 111 222 3333</p>
                 </div>
-                <div class="col-md-3">
-                    <h3 class="pb-3">Pages</h3>
-                    <p><span class="orange-color">> </span>Home</p>
-                    <p><span class="orange-color">> </span>About</p>
-                    <p><span class="orange-color">> </span>Shop</p>
-                    <p><span class="orange-color">> </span>News</p>
-                    <p><span class="orange-color">> </span>Contact</p>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Pages</h3>
+                    <ul class="footer-pages">
+                        <li><a href="./index.html">Home</a></li><li><a href="./about.html">About</a></li><li><a href="./shop.html">Shop</a></li><li><a href="./news.html">News</a></li><li><a href="./contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3">
-                    <h3 class="pb-3">Subscribe</h3>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Subscribe</h3>
                     <p>Subscribe to our mailing list to get the latest updates.</p>
-                    <div class="email">
-                        <input type="email" placeholder="email" class="ps-2 py-2">
-                        <button type="submit" class="py-2">
-                            <i class="ri-send-ins-fill"></i>
-                        </button>
-                    </div>
-
-
-
+                    <form class="email" action="#" method="get">
+                        <label class="visually-hidden" for="subscribe-email">Email address</label>
+                        <input id="subscribe-email" type="email" placeholder="Your email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="ri-send-ins-fill"></i></button>
+                    </form>
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Copyrights © 2019 <span class="orange-color">Ghulam Muhammad</span> All Rights Reserved.</p>
-                </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <i class="ri-facebook-circle-fill fs-4 px-2 text-secondary"></i>
-                    <i class="ri-instagram-fill fs-4 px-2 px-2 text-secondary"></i>
-                    <i class="ri-twitter-fill fs-4 px-2 px-2 text-secondary"></i>
-                    <i class="ri-linkedin-fill fs-4 px-2 px-2 text-secondary"></i>
-                    <i class="ri-chrome-fill fs-4 px-2 px-2 text-secondary"></i>
+            <div class="row align-items-center g-3">
+                <div class="col-md-7"><p class="copyright">Copyright © 2019 <span class="orange-color">Ghulam Muhammad</span>. All Rights Reserved.</p></div>
+                <div class="col-md-5 text-md-end social-icons">
+                    <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" aria-label="Website"><i class="ri-chrome-fill"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
